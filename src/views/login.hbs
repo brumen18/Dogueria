@@ -1,0 +1,22 @@
+<h1 class="mt-1 ml-3">Iniciar sesión</h1>
+<p class="ml-3">Introduce tus datos a continuación</p>
+<form class="mt-1" action="/login" method="post">
+<div class="row form-group">
+
+<div class="col-12 col-6">
+    <label>Usuario</label>
+<input type="text" class="form-control" required placeholder="Usuario" name="username" id="username">
+</div>
+<div class="col-12 col-6">
+    <label>Contraseña</label>
+<input type="password" class="form-control" required placeholder="Contraseña" name="password" id="password">
+</div>
+
+</div>
+<div class="form-control text-center">
+<input type="submit" value="Iniciar sesión">
+</div>
+</form>
+{{#if message}}
+<p>{{message}}</p>
+{{/if}}

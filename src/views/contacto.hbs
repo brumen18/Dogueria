@@ -1,0 +1,28 @@
+<h1 class="ml-3 mt-1">Contactanos</h1>
+<p class="ml-3">¿Tienes alguna sugerencia o inconveniente que quieras hacernos llegar? Rellena el formulario a continuación con los datos requeridos y te responderemos tan pronto como nos sea posible.</p>
+<form class="mt-2" action="/contacto" method="post">
+<div class="row">
+    <div class="col-12 col-6 form-group">
+        <label>Nombre</label>
+<input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+</div>
+<div class="col-12 col-4 form-group">
+    <label>Correo electrónico</label>
+<input type="text" class="form-control" placeholder="Correo" name="correo" id="correo" required>
+</div>
+</div>
+<div class="row mt-1">
+    <div class="col-12">
+        <label>Mensaje</label>
+<textarea class="form-control" type="text" rows="4" wrap="soft" id="mensaje" name="mensaje"></textarea>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 form-group text-center">
+<input type="submit" value="Enviar">
+    </div>
+</div>
+</form>
+{{#if message}}
+<p>{{message}}</p>
+{{/if}}

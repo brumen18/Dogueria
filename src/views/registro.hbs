@@ -1,0 +1,44 @@
+<h1 class="ml-3 mt-1">¡Regístrate gratis!</h1>
+<p class="ml-3">Estamos muy felices de que hayas decidido registrarte y formar parte de nuestra familia. Por favor, completa todos los datos a continuación para obtener tu cuenta.</p>
+<form class="mt-1" action="/registro" method="post">
+<div class="row form-group">
+<div class="col-12 col-3">
+    <label>Usuario</label>
+    <input class="form-control" type="text" placeholder="Usuario" required name="username" id="username">
+</div>
+<div class="col-12 col-3">
+    <label>Contraseña</label>
+    <input class="form-control" type="text" placeholder="Contraseña" required name="password" id="password">
+</div>
+<div class="col-12 col-4">
+    <label>¿Serás humano o perro?</label>
+    <select name="tipo" id="tipo" required>
+<option value="Perro 🐶">Perro 🐶</option>
+<option value="Humano" id="prueba" >Humano 👾</option>
+</select>
+</div>
+</div>
+<div class="form-group row">
+<div class="col-12">
+    <label>Rol que desempeñarás</label>
+    <select name="rol" id="rol">
+<option value="policia">Policía</option>
+<option value="beterinario">Beterinario</option>
+<option value="bombero">Bombero</option>
+<option value="politico">Político</option>
+    </select>
+</div>
+</div>
+<div class="row form-group">
+    <div class="col-12">
+        <label>Descripción</label>
+<textarea class="form-control" name="descripcion" wrap="soft" rows="4" id="descripcion"></textarea>
+    </div>
+</div>
+<div class="form-control text-center">
+<input type="submit" value="Registrarse">
+</div>
+</form>
+{{#if message}}
+<p>{{message}}</p>
+{{/if}}
